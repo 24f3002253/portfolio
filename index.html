@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Babul | Portfolio</title>
+  <style>
+    :root { --bg: #f7f7f5; --fg: #1d1d1f; --muted: #5f6368; --card: #ffffff; --accent: #2457d6; --border: #e2e2dd; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #16171a; --fg: #ececec; --muted: #a0a4ab; --card: #1f2125; --accent: #7aa2ff; --border: #2d3036; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--fg); line-height: 1.6; }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 20px 64px; }
+    h1 { margin: 0 0 4px; font-size: 2rem; }
+    h2 { margin: 40px 0 12px; font-size: 1.2rem; }
+    .tagline { color: var(--muted); margin: 0 0 24px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; margin-bottom: 12px; }
+    .card h3 { margin: 0 0 4px; font-size: 1.05rem; }
+    .card p { margin: 0; color: var(--muted); }
+    a { color: var(--accent); }
+    footer { margin-top: 40px; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Babul</h1>
+    <p class="tagline">Data science student at IIT Madras</p>
+
+    <h2>About</h2>
+    <p>I study data science at IIT Madras, with coursework in machine learning and NPTEL courses. I enjoy turning messy data into clear answers and building small tools that work end to end.</p>
+
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>12-Factor Config Service</h3>
+      <p>A FastAPI service that merges defaults, YAML, .env and environment variables, applies CLI overrides, and masks secrets. Deployed on Render.</p>
+    </div>
+    <div class="card">
+      <h3>Sales Data Analysis</h3>
+      <p>Regional revenue analysis of CSV transaction data using Python.</p>
+    </div>
+    <div class="card">
+      <h3>JSON Repair and File Reorganizer</h3>
+      <p>Scripts that fix malformed JSON and reorganize nested files by category, with Unicode-safe shell handling.</p>
+    </div>
+
+    <h2>Contact</h2>
+    <p>Email: <!--email_off-->24f3002253@ds.study.iitm.ac.in<!--/email_off--></p>
+
+    <footer>Built with plain HTML and hosted on GitHub Pages.</footer>
+  </main>
+</body>
+</html>
